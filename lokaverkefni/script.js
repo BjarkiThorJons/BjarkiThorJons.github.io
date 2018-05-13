@@ -23,7 +23,7 @@ function leita(){
 		let text = document.getElementById("search");
 		let filter = text.value.toLowerCase();
 		for (let i = 0; i< syningarnar.length; i++){
-			if (syningarnar[i].id.toLowerCase().indexOf(filter)> -1){
+			if (syningarnar[i].id.toLowerCase().indexOf(filter)){
 				syningarnar[i].style.display = "none";
 			}
 			else {
@@ -39,7 +39,7 @@ function stadsetning(){
 	let stadur_value = stadur.value.toLowerCase();
 	for (let i = 0; i< syningarnar.length; i++){
 			h3 = syningarnar[i].getElementsByTagName('h3')[0]
-			if (h3.innerHTML.toLowerCase().indexOf(stadur_value)> -1){
+			if (h3.innerHTML.toLowerCase().indexOf(stadur_value)){
 				syningarnar[i].style.display = "none";
 			}
 			else {
